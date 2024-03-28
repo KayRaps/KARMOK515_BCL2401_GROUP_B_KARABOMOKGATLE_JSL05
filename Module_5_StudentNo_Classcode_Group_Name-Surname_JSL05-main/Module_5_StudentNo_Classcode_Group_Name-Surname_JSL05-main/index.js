@@ -74,6 +74,7 @@ function displayPlaylists(playlists) {
     playlist.slice(1).forEach((song) => {
       // Create a list items
       const listItem = document.createElement('ul');
+      listItem.style.cursor = 'pointer'; // line to add a pointer cursor
 
       // Set the song title and artist
       const songTitle = document.createElement('span');
